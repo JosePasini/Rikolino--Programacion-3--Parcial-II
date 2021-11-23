@@ -40,7 +40,8 @@ En la carpeta raíz agregar un archivo llamado ".env" y agregar esto:
 	DB_PORT=3306
 	DB_DIALECT=mysql
 
-  ![image](https://user-images.githubusercontent.com/65823769/143048447-dec490ef-2113-41da-8e95-d55af354fb51.png)
+ 
+![image](https://user-images.githubusercontent.com/65823769/143052449-32cba3be-2b75-4a84-8985-98a50e6a4323.png)	
 
 Entrar a la carpeta: "Node Rikolino/src/database/config/config.js" y cambiar las configuraciones en base a tus configuraciones.
 
