@@ -2,6 +2,35 @@
 
 # Integrantes: Franco Baldasso, Mariano Martín, Martín Ramirez,  José Pasini.
 
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+# ~ ~ ~ ~ ~ COMANDOS PARA GENERAR LOS MODELOS ~ ~ ~ ~ ~
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+npx sequelize model:generate --name Menu --attributes nombre:string,descripcion:string
+
+npx sequelize model:generate --name Categoria --attributes nombre:string
+
+npx sequelize model:generate --name Subcategoria --attributes nombre:string,categoriaId:integer
+
+npx sequelize model:generate --name Visible --attributes nombre:string
+
+npx sequelize model:generate --name Producto --attributes nombre:string,precio:decimal,descripcion:string,categoriaId:integer,visibilidadId:integer,subcategoriaId:integer,subcategoria_categoriaId:integer,menuId:integer
+
+npx sequelize model:generate --name Insumo --attributes nombre:string,productoId:integer
+
+npx sequelize model:generate --name Imagen --attributes nombre:string,productoId:integer
+
+npx sequelize model:generate --name Usuario --attributes nombre:string,apellido:string,email:string,contrasenia:string
+
+npx sequelize model:generate --name Domicilio --attributes calle:string,numero:integer,departamento:string,codigoPostal:integer,usuarioId:integer
+
+npx sequelize model:generate --name Factura --attributes fecha:date,total:decimal,usuarioId:integer
+
+npx sequelize model:generate --name DetalleFactura --attributes cantidad:integer,subtotal:decimal,productoId:integer,facturaId:integer
+
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+# ~ ~ ~ ~ ~ ~ ~ ~ PASOS PARA ABRIR EL PROYECTO ~ ~ ~ ~ ~ ~ ~ 
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 1. Descargar el proyecto o clonarlo con el comando: git clone https://github.com/JosePasini/Rikolino--Programacion-3--Parcial-II
 
